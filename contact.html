@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <h1>Vous désirez nous contacter ?</h1>
+    <h1>Remplissez le formulaire ci-dessous !</h1>
+
+    <img src="img/chezmarcel_ext.jpg" alt="image terrasse">
+    <br>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Les menus</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+
+    <form action="contact.html">
+        <div>
+            <label>Vous êtes :</label>
+            <input type="radio" id="Particulier" name="type_utilisateur">
+            <label for="Particulier">Particulier</label>
+            <input type="radio" id="Professionel" name="type_utilisateur">
+            <label for="Professionel">Professionel</label>
+        </div>
+        <div>
+            <label for="object">object du message :</label>
+            <select name="object" id="object">
+                <option value="res">Réservation</option>
+                <option value="priv">Privatisation</option>
+                <option value="part">Partenariat</option>
+                <option value="aut">Autre</option>
+            </select>
+        </div>
+        <div>
+            <label for="Nom">Nom :</label>
+            <input type="text" id="Nom" required>
+        </div>
+        <div>
+            <label for="Prenom">Prenom :</label>
+            <input type="text" id="Prenom" required>
+        </div>
+
+        <div>
+            <label for="email">Votre adresse mail :</label>
+            <input type="email" id="email" placeholder="adresse@domaine.fr" required>
+        </div>
+        <div>
+            <label for="Telephone">Téléphone :</label>
+            <input type="text" id="Telephone" required>
+        </div>
+        <div>
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" placeholder="message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+
+</body>
+
+</html>
